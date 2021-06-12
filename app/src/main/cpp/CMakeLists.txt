@@ -44,7 +44,7 @@ find_library( # Sets the name of the path variable.
 # build script, prebuilt third-party libraries, or system libraries.
 
 # Build the Oboe library
-set(OBOE_DIR ../../../../../oboe)
+set(OBOE_DIR ../../../../oboe)
 add_subdirectory(${OBOE_DIR} ./oboe)
 
 # Make the Oboe public headers available to our app

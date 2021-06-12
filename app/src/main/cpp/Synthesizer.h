@@ -11,7 +11,7 @@
 #include <android/log.h>
 #include <jni.h>
 #include <stdio.h>
-#include <../../../oboe/src/flowgraph/RampLinear.h>
+#include <../../oboe/src/flowgraph/RampLinear.h>
 
 
 
