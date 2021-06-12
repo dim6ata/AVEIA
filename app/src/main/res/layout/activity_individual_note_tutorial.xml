@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/noteTutorialMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_darky"
+    android:orientation="vertical"
+    tools:context=".NoteTutorial">
+
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/titleTutorial"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:layout_alignParentTop="true"
+
+            android:contentDescription="@string/tutorial_image_placeholder"
+            android:padding="5dp"
+
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            app:srcCompat="@drawable/note_tutorial_real_final" />
+
+        <ImageView
+            android:id="@+id/logoNoteTutorial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@id/titleTutorial"
+
+            android:contentDescription="@string/string_aveia_logo_tutorial"
+            android:visibility="visible"
+            app:srcCompat="@drawable/aveia_logo_main"
+            tools:srcCompat="@drawable/aveia_logo_main" />
+    </RelativeLayout>
+
+    <!--BOTTOM LAYOUT -->
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <!--ANSWER TOP LAYER-->
+        <LinearLayout
+            android:id="@+id/answerTopLayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/gradient_dark_complete_horizontal"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:paddingTop="4dp">
+
+            <!--NESTED SCROLL VIEW-->
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/tutorialScroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fillViewport="true">
+
+                <!--SCROLL LAYOUT-->
+                <LinearLayout
+                    android:id="@+id/scrollLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--ANSWER-->
+                    <include layout="@layout/tutorial_answer_layout" />
+                    <!--COMPLETE INTERVAL-->
+                    <include layout="@layout/button_complete_interval_layout" />
+                    <!--NOTE TUTORIAL-->
+                    <include layout="@layout/button_note_tutorial_layout" />
+                    <!--SELECT INTERVAL-->
+                    <include layout="@layout/button_select_interval_layout" />
+                    <!--CONTROL-->
+                    <include layout="@layout/button_tutorial_control" />
+                </LinearLayout>
+                <!--END SCROLL LAYOUT-->
+            </androidx.core.widget.NestedScrollView>
+            <!--END SCROLL VIEW-->
+        </LinearLayout>
+        <!--END ANSWER TOP LAYER-->
+    </LinearLayout>
+    <!--END BOTTOM LAYOUT-->
+</LinearLayout><!--END MAIN LAYOUT-->

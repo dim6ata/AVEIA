@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.core.widget.NestedScrollView-->
+<!--SETTINGS PANEL CHANGE TUTORIAL VALUES-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigationSettingsPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_colour_silver_horizontal_inverted"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:visibility="visible">
+<!--Title-->
+    <TextView
+        android:id="@+id/titleNavSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/cormorant_sc_medium"
+        android:text="@string/change_tutorial_sound_values"
+        android:textAlignment="center"
+        android:textColor="@color/darky"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+<!--ROW 1 seek bars-->
+    <LinearLayout
+        android:id="@+id/layoutRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleNavSettings"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/questionNoteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="@string/question_note_length"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/questionNoteDisplayTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="@string/_1500_ms"
+                android:layout_below="@id/questionNoteText"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarQuestionNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionNoteDisplayTV"
+                android:backgroundTint="@color/darky"
+                android:max="1250"
+                android:progressTint="@color/darky"
+                android:progressBackgroundTint="@color/darky"
+                android:textAlignment="gravity"
+                android:thumbTint="@color/darky"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/questionIntervalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="@string/question_interval_time"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/questionIntervalDisplayTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="@string/_300ms"
+                android:layout_below="@id/questionIntervalText"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarQuestionInterval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questionIntervalDisplayTV"
+                android:max="1250"
+                android:backgroundTint="@color/darky"
+                android:progressTint="@color/darky"
+                android:progressBackgroundTint="@color/darky"
+                android:textAlignment="gravity"
+                android:thumbTint="@color/darky" />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+<!--ROW 2-->
+    <LinearLayout
+        android:id="@+id/layoutRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutRow1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/answerNoteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="@string/answer_note_length"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="20sp" />
+
+
+
+            <TextView
+                android:id="@+id/answerNoteDisplayTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="@string/_1500_ms"
+                android:layout_below="@id/answerNoteText"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarAnswerNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answerNoteDisplayTV"
+                android:backgroundTint="@color/darky"
+                android:progressBackgroundTint="@color/darky"
+                android:max="980"
+                android:progressTint="@color/darky"
+                android:textAlignment="gravity"
+                android:thumbTint="@color/darky"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/seekBarNavVolumeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="@string/instrument_volume"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/volumeNavDisplayTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="30%"
+                android:layout_below="@id/seekBarNavVolumeText"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarNavVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/volumeNavDisplayTV"
+                android:max="40"
+                android:backgroundTint="@color/darky"
+                android:progressTint="@color/darky"
+                android:progressBackgroundTint="@color/darky"
+                android:textAlignment="gravity"
+                android:thumbTint="@color/darky" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutRow2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/resetButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:padding="2sp">
+
+            <ImageView
+                android:id="@+id/resetSettingsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center_vertical"
+                android:onClick="onResetSettingsButtonClick"
+                android:src="@mipmap/ic_reset_preferences"
+                android:textAlignment="textEnd"
+                android:tooltipText="Reset Settings"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/saveButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/saveSettingsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center_vertical"
+                android:onClick="onSaveSettingsButtonClick"
+                android:src="@mipmap/ic_save_preferences"
+                android:textAlignment="textEnd"
+                android:tooltipText="Save Settings"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/loadButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/loadSettingsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center_vertical"
+                android:onClick="onLoadSettingsButtonClick"
+                android:src="@mipmap/ic_load_preferences"
+                android:textAlignment="textEnd"
+                android:tooltipText="Load Settings"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout><!--</androidx.core.widget.NestedScrollView>-->

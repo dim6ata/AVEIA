@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?><!--INSTRUMENT XML LAYOUT-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backGroundID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_darky"
+    tools:context=".InstrumentBaseActivity">
+
+    <!--View to be reused for various instruments-->
+<!--INSTRUMENT TITLE-->
+    <ImageView
+        android:id="@+id/titleIV"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--INSTRUMENT LOGO-->
+    <ImageView
+        android:id="@+id/img_logo_instrument"
+        android:layout_width="406dp"
+        android:layout_height="136dp"
+        android:contentDescription="@string/aveia_logo"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/titleIV"
+        app:layout_constraintTop_toBottomOf="@+id/titleIV"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/aveia_logo_main" />
+<!--INSTRUMENT DETAILS-->
+    <RelativeLayout
+        android:id="@+id/topInstrumentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/gradient_silver_outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/topRowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+<!--FREQUENCY INFO-->
+            <TextView
+                android:id="@+id/frequencyInfoTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/gradient_dark_border_round"
+                android:fontFamily="@font/cormorant_infant"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Frequency:"
+                android:textAlignment="center"
+                android:textColor="@color/silver"
+                android:textSize="18sp" />
+<!--FREQUENCY DISPLAY-->
+            <TextView
+                android:id="@+id/freqTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/cormorant_infant"
+                android:shadowColor="@color/design_default_color_on_secondary"
+                android:shadowRadius="7"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
+<!--GUIDANCE INFO-->
+            <TextView
+                android:id="@+id/guidanceInfoTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.8"
+                android:background="@drawable/gradient_dark_border_round"
+                android:fontFamily="@font/cormorant_infant"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Tuning Guidance:"
+                android:textAlignment="center"
+                android:textColor="@color/silver"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+<!--NOTE INFO-->
+        <TextView
+            android:id="@+id/noteInfoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/noteTV"
+            android:background="@drawable/gradient_dark_border_round"
+            android:fontFamily="@font/cormorant_infant"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Note Name and Octave Number:"
+            android:textAlignment="center"
+            android:textColor="@color/silver"
+            android:textSize="16sp" />
+<!--NOTE DETAILS-->
+        <TextView
+            android:id="@+id/noteTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topRowLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/cormorant_infant"
+            android:shadowColor="@android:color/background_dark"
+            android:shadowRadius="7"
+            android:textSize="96sp" />
+
+
+        <LinearLayout
+            android:id="@+id/bottomRowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noteTV"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+<!--TUNING INFO-->
+            <TextView
+                android:id="@+id/centInfoTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient_dark_border_round"
+                android:fontFamily="@font/cormorant_infant"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Tuning Percentage:"
+                android:textAlignment="center"
+                android:textColor="@color/silver"
+                android:textSize="18sp" />
+
+<!--TUNING DISPLAY-->
+            <TextView
+                android:id="@+id/centTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/cormorant_infant"
+                android:shadowColor="@android:color/background_dark"
+                android:shadowRadius="5"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+<!--TUNING GUIDANCE DISPLAY-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/ic_baseline_check_circle_24" />
+
+    </RelativeLayout>
+
+<!--CONTROL MENU-->
+    <LinearLayout
+        android:id="@+id/instrumentControlPanel"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/panelContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/button_sound_changer_radio"
+                        android:visibility="gone" />
+
+                    <include
+                        layout="@layout/button_range_changer_radio"
+                        android:visibility="gone" />
+
+                    <include
+                        layout="@layout/layout_instrument_preferences"
+                        android:visibility="gone" />
+
+                    <include layout="@layout/button_instrument_control" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

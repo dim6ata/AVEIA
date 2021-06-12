@@ -1,0 +1,11 @@
+@startuml
+class com.example.aveia.XYPadActivity {
+# void onCreate(Bundle)
+# void onResume()
++ boolean onTouchEvent(MotionEvent)
+# void initialiseInfoText()
+}
+
+
+com.example.aveia.InstrumentBaseActivity <|-- com.example.aveia.XYPadActivity
+@enduml

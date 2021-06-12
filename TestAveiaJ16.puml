@@ -1,0 +1,59 @@
+@startuml
+class CompleteInterval {
+}
+class IntervalManager {
+}
+class XYPadActivity {
+}
+class LengthBarHandler {
+}
+abstract class InstrumentBaseActivity {
+}
+class DataStorage {
+}
+class AveiaDialog {
+}
+class ThereminActivity {
+}
+class SoundSwitcher {
+}
+class StartupActivity {
+}
+class SystemUIManager {
+}
+class FrequencyManager {
+}
+class NoteTutorial {
+}
+class EngineConnector {
+}
+class VolumeBar {
+}
+class NavigationActivity {
+}
+class Frequency {
+}
+class SelectInterval {
+}
+class Interval {
+}
+class RandomNumberGenerator {
+}
+class AveiaToast {
+}
+class ButtonManager {
+}
+
+
+NoteTutorial <|-- CompleteInterval
+InstrumentBaseActivity <|-- XYPadActivity
+SensorEventListener <|.. InstrumentBaseActivity
+AppCompatActivity <|-- InstrumentBaseActivity
+InstrumentBaseActivity <|-- ThereminActivity
+AppCompatActivity <|-- StartupActivity
+OnTouchListener <|.. NoteTutorial
+OnClickListener <|.. NoteTutorial
+AppCompatActivity <|-- NoteTutorial
+AppCompatActivity <|-- NavigationActivity
+NoteTutorial <|-- SelectInterval
+@enduml

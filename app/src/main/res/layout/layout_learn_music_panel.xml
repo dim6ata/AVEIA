@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutLearnMusic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20sp"
+    android:layout_marginTop="2sp"
+    android:layout_marginEnd="20sp"
+    android:background="@drawable/gradient_dark_complete_horizontal"
+    android:orientation="horizontal"
+    android:padding="5sp"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/relLearn1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/img_backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onNoteTutorialClick"
+            android:src="@mipmap/ic_single_note"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/tv_ic_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_backButton"
+            android:fontFamily="@font/cormorant_infant"
+            android:gravity="center"
+            android:text="Note Tutorial"
+            android:textColor="@color/darky"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLearn2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/img_ic_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onSelectIntervalClick"
+            android:src="@mipmap/ic_select_interval"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/tv_ic_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_ic_2"
+            android:fontFamily="@font/cormorant_infant"
+            android:gravity="center"
+            android:text="Select Interval"
+            android:textColor="@color/darky"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLearn3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/img_ic_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onCompleteIntervalClick"
+            android:src="@mipmap/ic_complete_interval"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/tv_ic_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_ic_3"
+            android:fontFamily="@font/cormorant_infant"
+            android:gravity="center"
+            android:text="Complete Interval"
+            android:textColor="@color/darky"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

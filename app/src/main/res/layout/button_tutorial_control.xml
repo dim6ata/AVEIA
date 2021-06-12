@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/controlButtons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2sp"
+    android:background="@drawable/gradient_colour_silver_horizontal"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="5sp"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/relLearn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/img_backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onBackButtonClick"
+            android:src="@mipmap/ic_back_button"
+            android:textAlignment="textEnd"
+            android:tooltipText="Go Back"/>
+
+        <TextView
+            android:id="@+id/tv_ic_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_backButton"
+            android:fontFamily="@font/cormorant_infant"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="@color/darky"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLearn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/replayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onReplayButtonClick"
+            android:src="@mipmap/ic_play_current"
+            android:textAlignment="textEnd"
+            android:tooltipText="Replay"/>
+
+        <TextView
+            android:id="@+id/tv_ic_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/replayButton"
+            android:fontFamily="@font/cormorant_infant"
+            android:gravity="center"
+            android:text="Play Current"
+            android:textColor="@color/darky"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLearn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/playNextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onPlayNextButtonClick"
+            android:src="@mipmap/ic_play_next"
+            android:textAlignment="textEnd"
+            android:tooltipText="Next"/>
+
+        <TextView
+            android:id="@+id/tv_ic_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playNextButton"
+            android:fontFamily="@font/cormorant_infant"
+            android:gravity="center"
+            android:text="Play Next"
+            android:textColor="@color/darky"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLearn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/levelSelectorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onLevelSelectionButtonClick"
+            android:src="@mipmap/ic_level_up"
+            android:textAlignment="textEnd"
+            android:tooltipText="Change Difficulty"/>
+
+        <TextView
+            android:id="@+id/tv_ic_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/levelSelectorButton"
+            android:fontFamily="@font/cormorant_infant"
+            android:gravity="center"
+            android:text="Complex Mode"
+            android:textColor="@color/darky"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLearn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/infoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onInfoButtonClick"
+            android:src="@mipmap/ic_info"
+            android:textAlignment="textEnd"
+            android:tooltipText="Info"/>
+
+        <TextView
+            android:id="@+id/tv_ic_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infoButton"
+            android:fontFamily="@font/cormorant_infant"
+            android:gravity="center"
+            android:text="Info"
+            android:textColor="@color/darky"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

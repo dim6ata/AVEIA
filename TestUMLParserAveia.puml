@@ -1,0 +1,57 @@
+@startuml
+class com.example.aveia.CompleteInterval {
+}
+class com.example.aveia.IntervalManager {
+}
+class com.example.aveia.XYPadActivity {
+}
+class com.example.aveia.LengthBarHandler {
+}
+abstract class com.example.aveia.InstrumentBaseActivity {
+}
+class com.example.aveia.DataStorage {
+}
+class com.example.aveia.AveiaDialog {
+}
+class com.example.aveia.ThereminActivity {
+}
+
+class com.example.aveia.StartupActivity {
+}
+
+class com.example.aveia.FrequencyManager {
+}
+class com.example.aveia.NoteTutorial {
+}
+class com.example.aveia.EngineConnector {
+}
+class com.example.aveia.VolumeBar {
+}
+class com.example.aveia.NavigationActivity {
+}
+class com.example.aveia.Frequency {
+}
+class com.example.aveia.SelectInterval {
+}
+class com.example.aveia.Interval {
+}
+class com.example.aveia.RandomNumberGenerator {
+}
+class com.example.aveia.AveiaToast {
+}
+class com.example.aveia.ButtonManager {
+}
+
+
+com.example.aveia.NoteTutorial <|-- com.example.aveia.CompleteInterval
+com.example.aveia.InstrumentBaseActivity <|-- com.example.aveia.XYPadActivity
+android.hardware.SensorEventListener <|.. com.example.aveia.InstrumentBaseActivity
+androidx.appcompat.app.AppCompatActivity <|-- com.example.aveia.InstrumentBaseActivity
+com.example.aveia.InstrumentBaseActivity <|-- com.example.aveia.ThereminActivity
+androidx.appcompat.app.AppCompatActivity <|-- com.example.aveia.StartupActivity
+com.example.aveia.OnTouchListener <|.. com.example.aveia.NoteTutorial
+com.example.aveia.OnClickListener <|.. com.example.aveia.NoteTutorial
+androidx.appcompat.app.AppCompatActivity <|-- com.example.aveia.NoteTutorial
+androidx.appcompat.app.AppCompatActivity <|-- com.example.aveia.NavigationActivity
+com.example.aveia.NoteTutorial <|-- com.example.aveia.SelectInterval
+@enduml

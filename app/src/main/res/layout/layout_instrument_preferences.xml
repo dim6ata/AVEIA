@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--PREFERENCES PANEL-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingsPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_colour_silver_horizontal_inverted"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:visibility="visible">
+<!--TITLE OF PREFERENCES PANEL-->
+    <TextView
+        android:id="@+id/titleSettingsChanger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/cormorant_sc_medium"
+        android:text="Preferences"
+        android:textAlignment="center"
+        android:textColor="@color/darky"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+<!--ROW 1 CHECK BOXES-->
+    <LinearLayout
+        android:id="@+id/layoutRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleSettingsChanger"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/visibilityCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:onClick="onEnhancedViewButtonClick"
+            android:text="Enhanced Visibility"
+            android:textColor="@color/darky"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/openPanelCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:onClick="onPanelOpenedButtonClick"
+            android:text="Keep Panels Open"
+            android:textColor="@color/darky"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+<!--ROW2 CHECK AND SEEK BAR-->
+    <LinearLayout
+        android:id="@+id/layoutRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutRow1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/displayInstrumentInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:onClick="onDisplayInfoViewButtonClick"
+            android:text="Display Info Text"
+            android:textColor="@color/darky"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tuningRefinementText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="Tuning Refinement"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tuningDisplayTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="30%"
+                android:layout_below="@id/tuningRefinementText"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarTuning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tuningDisplayTV"
+                android:max="25"
+                android:backgroundTint="@color/darky"
+                android:progressTint="@color/darky"
+                android:progressBackgroundTint="@color/darky"
+                android:textAlignment="gravity"
+                android:thumbTint="@color/darky" />
+
+
+        </RelativeLayout>
+
+<!--ROW 3 Seek Bars-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutRow2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/seekBarTimerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="Change Menu Timer"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="20sp" />
+
+
+
+            <TextView
+                android:id="@+id/timerDisplayTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="1500 ms"
+                android:layout_below="@id/seekBarTimerText"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarTimeOut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timerDisplayTV"
+                android:backgroundTint="@color/darky"
+                android:max="1500"
+                android:progressTint="@color/darky"
+                android:progressBackgroundTint="@color/darky"
+                android:textAlignment="gravity"
+                android:thumbTint="@color/darky"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/seekBarVolumeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="Instrument Volume"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/volumeDisplayTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/cormorant_infant"
+                android:text="30%"
+                android:layout_below="@id/seekBarVolumeText"
+                android:textAlignment="center"
+                android:textColor="@color/darky"
+                android:textSize="14sp" />
+
+            <SeekBar
+                android:id="@+id/seekBarVolume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/volumeDisplayTV"
+                android:max="40"
+                android:backgroundTint="@color/darky"
+                android:progressTint="@color/darky"
+                android:progressBackgroundTint="@color/darky"
+                android:textAlignment="gravity"
+                android:thumbTint="@color/darky" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+<!--ROW 4 - BUTTONS -->
+    <LinearLayout
+        android:id="@+id/layoutRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutRow3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/holdButtonLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal|center_vertical"-->
+<!--            android:layout_weight="1"-->
+<!--            android:padding="2sp"-->
+<!--            android:visibility="gone">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/holdButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:foregroundGravity="center_vertical"-->
+<!--                android:onClick="onHoldButtonClick"-->
+<!--                android:src="@mipmap/ic_hold_button"-->
+<!--                android:textAlignment="textEnd"-->
+<!--                android:tooltipText="Hold Screen"/>-->
+
+<!--        </RelativeLayout>-->
+
+<!--RESET SENSOR BUTTON-->
+        <RelativeLayout
+            android:id="@+id/resetSensorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:padding="2sp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/resetSensorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center_vertical"
+                android:onClick="onResetSensorButtonClick"
+                android:src="@mipmap/ic_reset_sensor"
+                android:textAlignment="textEnd"
+                android:tooltipText="Reset Sensor"/>
+
+        </RelativeLayout>
+<!--RESET PREFERENCES BUTTON-->
+        <RelativeLayout
+            android:id="@+id/resetButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:padding="2sp">
+
+            <ImageView
+                android:id="@+id/resetPreferencesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center_vertical"
+                android:onClick="onResetPreferencesButtonClick"
+                android:src="@mipmap/ic_reset_preferences"
+                android:textAlignment="textEnd"
+                android:tooltipText="Reset Preferences"/>
+
+        </RelativeLayout>
+<!--SAVE BUTTON-->
+        <RelativeLayout
+            android:id="@+id/saveButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:padding="2sp">
+
+            <ImageView
+                android:id="@+id/savePreferencesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center_vertical"
+                android:onClick="onSavePreferencesButtonClick"
+                android:src="@mipmap/ic_save_preferences"
+                android:textAlignment="textEnd"
+                android:tooltipText="Save Preferences"/>
+
+        </RelativeLayout>
+
+<!--LOAD BUTTON-->
+        <RelativeLayout
+            android:id="@+id/loadButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:padding="2sp">
+
+            <ImageView
+                android:id="@+id/loadPreferencesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center_vertical"
+                android:onClick="onLoadPreferencesButtonClick"
+                android:src="@mipmap/ic_load_preferences"
+                android:textAlignment="textEnd"
+                android:tooltipText="Load Preferences"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

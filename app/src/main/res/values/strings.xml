@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">AVEIA</string>
+    <string name="aveia_logo">aveia logo</string>
+    <string name="aveia_text_image">aveia text image</string>
+    <string name="choose_a_note">Choose A Colour For The Played Note</string>
+    <string name="choose_an_interval">Choose The Interval Of Played Notes</string>
+    <string name="complete_an_interval">Complete the Interval of the Played Note</string>
+    <string name="play_new_note">Select Next To Play A New Question</string>
+    <string name="correct_answer">Correct! Click Next To Play Another Sound</string>
+    <string name="incorrect_answer">Incorrect! Click Next To Try A New Sound</string>
+    <string name="press_next">You Need To Press Next To Play A Question</string>
+    <string name="tutorial_image_placeholder">Tutorial Image Placeholder</string>
+    <string name="what_interval">What is the</string>
+    <string name="of">of</string>
+    <string name="string_aveia_logo_tutorial" />
+    <string name="image_placeholder_to_notify_user_if_answer_is_correct_or_incorrect">Image Placeholder to notify user if answer is correct or incorrect</string>
+    <string name="image_button_for_octave_interval">Image Button for Octave Interval</string>
+    <string name="image_button_for_minor_7th_interval">Image Button for Minor 7th Interval</string>
+    <string name="image_button_for_6th_interval">Image Button for 6th Interval</string>
+    <string name="image_button_for_minor_6th_interval">Image Button for Minor 6th Interval</string>
+    <string name="image_button_for_perfect_fifth_interval">Image Button for Perfect Fifth Interval</string>
+    <string name="image_button_for_perfect_fourth_interval">Image Button for Perfect Fourth Interval</string>
+    <string name="image_button_for_3rd_interval">Image Button for 3rd Interval</string>
+    <string name="image_button_for_minor_3rd_interval">Image Button for Minor 3rd Interval</string>
+    <string name="image_button_for_second_interval">Image Button for Second Interval</string>
+    <string name="image_button_for_minor_2nd_interval">Image Button for Minor 2nd Interval</string>
+    <string name="image_button_for_unison_interval">Image Button for Unison Interval</string>
+    <string name="image_button_for_7th_interval">Image Button for 7th Interval</string>
+    <string name="image_button_for_tritone_interval">Image Button for Tritone Interval</string>
+    <string name="USER_PREFERENCES">user_preferences</string>
+    <string name="AMPLITUDE">amplitude</string>
+    <string name="SOUND_OPTION">sound_option</string>
+    <string name="QUESTION_NOTE_LENGTH">question_note_len</string>
+    <string name="QUESTION_INTERVAL_LENGTH">question_interval_len</string>
+    <string name="ANSWER_NOTE_LENGTH">answer_note_len</string>
+    <string name="POSITION_CENTER_FREQUENCY">position_center_frequency</string>
+    <string name="IS_ENHANCED_VIEW_ON">is_enhanced_view_on</string>
+    <string name="ARE_CONTROL_PANELS_OPEN">are_control_panels_open</string>
+    <string name="IS_INSTRUMENT_INFO_DISPLAYED">is_instrument_info_displayed</string>
+    <string name="CONTROL_RELOAD_TIME">control_reload_time</string>
+    <string name="TUNING_RANGE">tuning_range</string>
+    <string name="CURRENT_RANGE_ID">current_range_id</string>
+    <string name="change_tutorial_sound_values">Change Tutorial Sound Values</string>
+    <string name="question_note_length">Question Note Length</string>
+    <string name="_1500_ms">1500 ms</string>
+    <string name="question_interval_time">Question Interval Time</string>
+    <string name="_300ms">300ms</string>
+    <string name="answer_note_length">Answer Note Length</string>
+    <string name="instrument_volume">Instrument Volume</string>
+
+
+</resources>

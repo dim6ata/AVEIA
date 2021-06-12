@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/controlButtons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2sp"
+    android:background="@drawable/gradient_colour_silver_horizontal"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="5sp"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/relInstru0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/in_ctr_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onInstrumentBackButtonClick"
+            android:src="@mipmap/ic_back_button"
+            android:textAlignment="textEnd"
+            android:tooltipText="Go Back"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relInstru1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/in_ctr_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onSoundChangeButtonClick"
+            android:src="@mipmap/ic_sound_changer"
+            android:textAlignment="textEnd"
+            android:tooltipText="Sound Panel"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relInstru2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/in_ctr_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onRangeSelectionButtonClick"
+            android:src="@mipmap/ic_range_selection"
+            android:textAlignment="textEnd"
+            android:tooltipText="Sound Range"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relInstru3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/in_ctr_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onSettingsButtonClick"
+            android:src="@mipmap/ic_settings_button"
+            android:textAlignment="textEnd"
+            android:tooltipText="Preferences"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relInstru4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:padding="2sp">
+
+        <ImageView
+            android:id="@+id/in_ctr_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:foregroundGravity="center_vertical"
+            android:onClick="onInstrumentInfoButtonClick"
+            android:src="@mipmap/ic_info"
+            android:textAlignment="textEnd"
+            android:tooltipText="Info"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

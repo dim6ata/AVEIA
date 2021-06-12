@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rangePanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_colour_silver_horizontal_inverted"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/titleRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/cormorant_sc_medium"
+        android:text="Select Instrument Range"
+        android:textAlignment="center"
+        android:textColor="@color/darky"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rangeRadioGroup">
+
+        <RadioButton
+            android:id="@+id/rb_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:text="Full Range"
+            android:textSize="20dp"
+            android:textColor="@color/darky" />
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:text="Bass"
+            android:textSize="20dp"
+            android:textColor="@color/darky" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:text="Mid"
+            android:textSize="20dp"
+            android:textColor="@color/darky" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:text="High"
+            android:textSize="20dp"
+            android:textColor="@color/darky" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:text="Extended High"
+            android:textSize="20dp"
+            android:textColor="@color/darky" />
+
+        <RadioButton
+            android:id="@+id/rb_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:text="Full Range Extended"
+            android:textSize="20dp"
+            android:textColor="@color/darky" />
+
+
+    </RadioGroup>
+
+</LinearLayout>

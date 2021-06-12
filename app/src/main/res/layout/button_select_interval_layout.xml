@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selectIntervalButtons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <!--ROW 1-->
+    <RelativeLayout
+        android:id="@+id/select_col_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <!--ADD BUTTONS HERE-->
+        <ImageButton
+            android:id="@+id/s_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/image_button_for_unison_interval"
+            android:src="@mipmap/ic_unison_round"
+            android:tooltipText="Unison"
+            />
+
+        <ImageButton
+            android:id="@+id/s_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_0"
+            android:contentDescription="@string/image_button_for_minor_2nd_interval"
+            android:src="@mipmap/ic_minor_second_round"
+            android:tooltipText="Minor Second"/>
+
+        <ImageButton
+            android:id="@+id/s_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_1"
+            android:contentDescription="@string/image_button_for_second_interval"
+            android:src="@mipmap/ic_major_second_round"
+            android:tooltipText="Major Second"/>
+
+    </RelativeLayout>
+
+    <!--ROW 2-->
+    <RelativeLayout
+        android:id="@+id/select_row_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/s_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/image_button_for_minor_3rd_interval"
+            android:src="@mipmap/ic_minor_third_round"
+            android:tooltipText="Minor Third"
+            />
+
+        <ImageButton
+            android:id="@+id/s_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_3"
+            android:contentDescription="@string/image_button_for_3rd_interval"
+            android:src="@mipmap/ic_major_third_round"
+            android:tooltipText="Major Third"/>
+
+    </RelativeLayout>
+
+    <!--ROW 3-->
+    <RelativeLayout
+        android:id="@+id/select_row_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/s_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/image_button_for_perfect_fourth_interval"
+            android:src="@mipmap/ic_fourth_round"
+            android:tooltipText="Perfect Fourth"/>
+
+        <ImageButton
+            android:id="@+id/s_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_5"
+            android:contentDescription="@string/image_button_for_tritone_interval"
+            android:src="@mipmap/ic_flat_fifth_round"
+            android:tooltipText="Tritone"/>
+
+        <ImageButton
+            android:id="@+id/s_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_6"
+            android:contentDescription="@string/image_button_for_perfect_fifth_interval"
+            android:src="@mipmap/ic_fifth_round"
+            android:tooltipText="Perfect Fifth"/>
+
+    </RelativeLayout>
+
+    <!--ROW 4-->
+    <RelativeLayout
+        android:id="@+id/select_row_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/s_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/image_button_for_minor_6th_interval"
+            android:src="@mipmap/ic_minor_sixth_round"
+            android:tooltipText="Minor Sixth"/>
+
+        <ImageButton
+            android:id="@+id/s_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_8"
+            android:contentDescription="@string/image_button_for_6th_interval"
+            android:src="@mipmap/ic_major_sixth_round"
+            android:tooltipText="Major Sixth"/>
+
+    </RelativeLayout>
+
+    <!--ROW 5-->
+    <RelativeLayout
+        android:id="@+id/select_row_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/s_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/image_button_for_minor_7th_interval"
+            android:src="@mipmap/ic_minor_seventh_round"
+            android:tooltipText="Minor Seventh"/>
+
+        <ImageButton
+            android:id="@+id/s_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_10"
+            android:contentDescription="@string/image_button_for_7th_interval"
+            android:src="@mipmap/ic_major_seventh_round"
+            android:tooltipText="Major Seventh"/>
+
+        <ImageButton
+            android:id="@+id/s_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_11"
+            android:contentDescription="@string/image_button_for_octave_interval"
+            android:src="@mipmap/ic_octave_round"
+            android:tooltipText="Octave"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

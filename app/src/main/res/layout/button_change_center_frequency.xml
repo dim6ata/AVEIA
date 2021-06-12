@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/changeFrequencyPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_colour_silver_horizontal_inverted"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="5dp"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/titleChangeFrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:fontFamily="@font/cormorant_sc_medium"
+        android:text="Change Center Frequency"
+        android:textAlignment="center"
+        android:textColor="@color/darky"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/changeFrequencyRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/cf_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:text="440hz"
+            android:textColor="@color/darky"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/cf_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:text="432hz"
+            android:layout_below="@id/cf_0"
+            android:textColor="@color/darky"
+            android:textSize="20dp" android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/cf_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/darky"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/cormorant_infant"
+            android:text="445hz"
+            android:textColor="@color/darky"
+            android:textSize="20dp" android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/cf_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/darky"
+            android:fontFamily="@font/cormorant_infant"
+            android:text="420hz"
+            android:layout_below="@id/cf_2"
+            android:textColor="@color/darky"
+            android:textSize="20dp" android:layout_weight="1"/>
+
+
+    </RadioGroup>
+
+</LinearLayout>

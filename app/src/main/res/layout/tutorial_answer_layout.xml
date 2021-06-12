@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/answerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/correct_border"
+    android:orientation="horizontal"
+    android:padding="0dp"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/screenRelLayoutTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/gradient_colour_silver_horizontal"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/noteNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/answerImgID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="?android:attr/panelBackground"
+                android:contentDescription="@string/image_placeholder_to_notify_user_if_answer_is_correct_or_incorrect"
+                android:foregroundGravity="center_vertical|center_horizontal"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_correct_circle_foreground"
+                tools:srcCompat="@drawable/ic_correct_circle_foreground" />
+
+
+            <RelativeLayout
+                android:id="@+id/noteInfoRelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_weight="0.5"
+                android:foregroundGravity="center_vertical|center_horizontal"
+
+                android:textAlignment="center">
+
+
+                <LinearLayout
+                    android:id="@+id/noteAnswersLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/noteNameTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/panelBackground"
+                        android:fontFamily="@font/cormorant_infant"
+                        android:shadowColor="@android:color/background_dark"
+                        android:shadowRadius="3"
+                        android:text="Ab"
+                        android:textAlignment="center"
+                        android:textSize="50sp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/intervalArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_arrow_forward_foreground" />
+
+                    <TextView
+                        android:id="@+id/note2NameTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/panelBackground"
+                        android:fontFamily="@font/cormorant_infant"
+                        android:shadowColor="@android:color/background_dark"
+                        android:shadowRadius="3"
+                        android:text="F#"
+                        android:textAlignment="center"
+                        android:textSize="50sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/freqTutTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/noteAnswersLayout"
+
+                    android:layout_centerInParent="true"
+                    android:background="?android:attr/panelBackground"
+                    android:fontFamily="@font/cormorant_infant"
+                    android:shadowColor="@android:color/background_dark"
+                    android:shadowRadius="3"
+                    android:text="256hz"
+                    android:textAlignment="center"
+                    android:textSize="36sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/userInstructionsTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noteNameLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="?android:attr/panelBackground"
+            android:fontFamily="@font/cormorant_infant"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:shadowColor="@android:color/background_dark"
+            android:shadowRadius="2"
+            android:text="@string/play_new_note"
+            android:textAlignment="center"
+            android:textColor="@color/darky"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
