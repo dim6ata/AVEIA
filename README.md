@@ -135,5 +135,5 @@ AVEIA in short for Audio Visual Educational Instrument Application is an Android
 </td>
   
 </table>
-
+The use of this application or code related to it is not allowed without my permission. 
 Copyright 2021, dim6ata.
